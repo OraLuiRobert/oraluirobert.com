@@ -1,0 +1,44 @@
+{
+  "name": "oraluirobert",
+  "version": "0.1.0",
+  "description": "homepage for oraluirobert.com",
+  "main": "index.js",
+  "scripts": {
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "format": "prettier --config .prettierrc 'src/**/*.{js,jsx}'",
+    "lint": "prettier --check --write --config .prettierrc 'src/**/*.{js,jsx}'"
+  },
+  "engines": {
+    "node": "14.15.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oraluirobert/oraluirobert.com.git"
+  },
+  "keywords": [
+    "gatsby",
+    "react",
+    "static"
+  ],
+  "author": "OraLuiRobert <contact@oraluirobert.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/OraLuiRobert/oraluirobert.com/issues"
+  },
+  "homepage": "https://github.com/OraLuiRobert/oraluirobert.com#readme",
+  "dependencies": {
+    "gatsby": "^3.3.0",
+    "gatsby-plugin-google-fonts": "^1.0.1",
+    "gatsby-plugin-react-helmet": "^4.3.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-helmet": "^6.1.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.2",
+    "gatsby-plugin-postcss": "^5.6.0",
+    "postcss": "^8.4.6",
+    "tailwindcss": "^3.0.18"
+  }
+}

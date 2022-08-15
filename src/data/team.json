@@ -1,0 +1,15 @@
+{
+  "peoples": [
+    { "name": "Ioana Verebi", "role": "Co-founder" },
+    { "name": "Marius Bălaj", "role": "Co-founder" },
+    { "name": "Vlad Temian", "role": "Co-founder" },
+    { "name": "Bogdan Moldovean", "role": "Principal Engineer" },
+    { "name": "Petru Vlad", "role": "Art Director" },
+    { "name": "Mihai Temian", "role": "Software Developer" },
+    { "name": "Anamaria Madincea", "role": "Software Developer" },
+    { "name": "Rareș Stoica", "role": "Software Developer" },
+    { "name": "Rareș Sabău", "role": "Software Developer" },
+    { "name": "Sebastian Bălaj", "role": "Software Developer" },
+    { "name": "Andrei Tămaș", "role": "Test Engineer" }
+  ]
+}
