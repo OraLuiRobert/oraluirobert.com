@@ -1,0 +1,20 @@
+{
+  "packages": [
+    {
+      "name": "Gold",
+      "price": "1500€",
+      "benefits": [
+        "Brand awareness on the event Social Media accounts",
+        "Logo placed on promo materials and communication e-mails.",
+        "Great networking with special guests, designers, models and artists.",
+        "Posibility to distribute promo materials, gifts and brand awareness."
+      ]
+    },
+    {
+      "name": "Premium",
+      "price": "Products and services",
+      "benefits": ["Gold Package benefits"]
+    },
+    { "name": "Ambasador", "price": "3000+€", "benefits": ["Custom partnership"] }
+  ]
+}
