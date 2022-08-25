@@ -4,22 +4,18 @@ import Layout from "../core/Layout";
 
 import Header from "../sections/Header";
 import Hero from "../sections/Hero";
-import Cards from "../sections/Cards";
-import About from "../sections/About";
+import Packages from "../sections/Packages";
 import Contact from "../sections/Contact";
-import Footer from "../sections/Footer";
-import Clients from "../sections/Clients";
+import About from "../sections/About";
 
 const HomePage = () => {
   return (
     <Layout>
       <Header />
       <Hero />
-      {/*<Cards />*/}
-      {/*<Clients />*/}
-      {/*<About />*/}
-      {/*<Contact />*/}
-      {/*<Footer />*/}
+      <About />
+      <Packages />
+      <Contact />
     </Layout>
   );
 };
