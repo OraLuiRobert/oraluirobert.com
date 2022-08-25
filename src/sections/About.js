@@ -1,26 +1,34 @@
 import React from "react";
+import SectionTitle from "../ui/molecules/SectionTitle";
+import AboutRightColumn from "../components/about/AboutRightColumn";
+import AboutLeftColumn from "../components/about/AboutLeftColumn";
 
-import team from "../data/team.json";
+import aboutData from "../data/about.json";
+
+import whyAreWeDoing from "../static/whyAreWeDoing.jpg";
+import communityDiscovery from "../static/communityDiscovery.jpg";
+import whatWeDo from "../static/whatWeDo.jpg";
+
+const IMAGES = [whyAreWeDoing, communityDiscovery, whatWeDo];
 
 const About = () => {
   return (
-    <section className="container w-11/12 max-w-screen-lg mx-auto pt-20 md:pt-40 lg:pt-60">
-      <div className="flex flex-col mb-10 md:mb-28 lg:flex-row lg:space-x-28">
-        <h3 className="text-2xl md:text-4xl font-semibold whitespace-nowrap mb-5">A team to be proud of</h3>
-        <p className="text-lg text-gray-400 leading-8 md:leading-10 md:text-2xl">
-          We thrive on diversity and believe that our success is defined by the people in our team. We are coding experts, consultants, open source enthusiasts, and researchers at
-          heart. We love a challenge.
-        </p>
-      </div>
+    <section className="container mx-auto py-20 ">
+      <SectionTitle title="About" highlightedText=" Robert's Hour" />
 
-      <div className="grid gap-8 sm:grid-cols-2 sm:grid-rows-2 md:grid-cols-3 md:grid-rows-3">
-        {team.peoples.map((person) => (
-          <div key={person.name} className="flex flex-col">
-            <strong className="text-xl md:leading-10 md:text-2xl">{person.name}</strong>
-            <small className="text-lg text-gray-400 md:text-xl">{person.role}</small>
+      {aboutData.about.map((data, index) => {
+        const isOdd = index % 2 !== 0;
+        const image = IMAGES[index];
+        return (
+          <div className="flex items-center">
+            {isOdd ? (
+              <AboutRightColumn title={data.title} description={data.description} secondTitle={data.secondTitle} secondDescription={data.secondDescription} image={image} />
+            ) : (
+              <AboutLeftColumn title={data.title} description={data.description} secondTitle={data.secondTitle} secondDescription={data.secondDescription} image={image} />
+            )}
           </div>
-        ))}
-      </div>
+        );
+      })}
     </section>
   );
 };
