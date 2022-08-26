@@ -13,7 +13,7 @@ const IMAGES = [whyAreWeDoing, communityDiscovery, whatWeDo];
 
 const About = () => {
   return (
-    <section className="container mx-auto py-20 ">
+    <section id="about" className="container mx-auto py-20 ">
       <SectionTitle title="About" highlightedText=" Robert's Hour" />
 
       {aboutData.about.map((data, index) => {

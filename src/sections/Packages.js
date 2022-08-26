@@ -6,8 +6,9 @@ import sponsorPackages from "../data/packages.json";
 
 const Packages = () => {
   return (
-    <div id="packages" className="py-10">
+    <div id="packages" className="bg-gray-200 py-10 mb-20">
       <SectionTitle title="Sponsor Packages" />
+
       <div className="container  mx-auto flex justify-around items-stretch ">
         {sponsorPackages.packages.map((item, index) => (
           <Card packageName={item.name} packagePrice={item.price} packageBenefits={item.benefits} index={index} />

@@ -4,7 +4,7 @@ import hero from "../static/hero.png";
 
 const Hero = () => {
   return (
-    <section className=" relative">
+    <section id="hero">
       <img src={hero} className="w-full" alt="Ora Lui Robert" />
     </section>
   );
