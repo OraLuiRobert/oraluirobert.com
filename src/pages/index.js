@@ -7,6 +7,7 @@ import Hero from "../sections/Hero";
 import Packages from "../sections/Packages";
 import Contact from "../sections/Contact";
 import About from "../sections/About";
+import Gallery from "../sections/Gallery";
 
 const HomePage = () => {
   return (
@@ -15,6 +16,7 @@ const HomePage = () => {
       <Hero />
       <About />
       <Packages />
+      <Gallery />
       <Contact />
     </Layout>
   );
