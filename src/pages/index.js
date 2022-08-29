@@ -8,6 +8,8 @@ import Packages from "../sections/Packages";
 import Contact from "../sections/Contact";
 import About from "../sections/About";
 import Gallery from "../sections/Gallery";
+import Targets from "../sections/Targets";
+import Projects from "../sections/Projects";
 
 const HomePage = () => {
   return (
@@ -17,6 +19,8 @@ const HomePage = () => {
       <About />
       <Packages />
       <Gallery />
+      <Targets />
+      <Projects />
       <Contact />
     </Layout>
   );
