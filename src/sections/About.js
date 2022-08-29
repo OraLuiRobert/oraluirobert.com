@@ -5,9 +5,9 @@ import AboutLeftColumn from "../components/about/AboutLeftColumn";
 
 import aboutData from "../data/about.json";
 
-import whyAreWeDoing from "../static/whyAreWeDoing.jpg";
-import communityDiscovery from "../static/communityDiscovery.jpg";
-import whatWeDo from "../static/whatWeDo.jpg";
+import whyAreWeDoing from "../static/about/whyAreWeDoing.jpg";
+import communityDiscovery from "../static/about/communityDiscovery.jpg";
+import whatWeDo from "../static/about/whatWeDo.jpg";
 
 const IMAGES = [whyAreWeDoing, communityDiscovery, whatWeDo];
 
