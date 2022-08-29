@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import HorizontalTimeline from "react-horizontal-timeline";
 import SectionTitle from "../ui/molecules/SectionTitle";
-import timeline from "../data/timeLine";
+import timeline from "../data/timeline";
 
 const Projects = () => {
   const [values, setValues] = useState({ value: 0, previous: -1 });
