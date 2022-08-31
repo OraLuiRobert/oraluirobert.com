@@ -6,29 +6,19 @@ import AboutLeftColumn from "../components/about/AboutLeftColumn";
 import aboutData from "../data/about.json";
 
 import whyAreWeDoing from "../static/about/whyAreWeDoing.jpg";
-import communityDiscovery from "../static/about/communityDiscovery.jpg";
-import whatWeDo from "../static/about/whatWeDo.jpg";
-
-const IMAGES = [whyAreWeDoing, communityDiscovery, whatWeDo];
 
 const About = () => {
   return (
     <section id="about" className="container mx-auto py-20 ">
       <SectionTitle title="About" highlightedText=" Robert's Hour" />
 
-      {aboutData.about.map((data, index) => {
-        const isOdd = index % 2 !== 0;
-        const image = IMAGES[index];
-        return (
-          <div className="flex items-center">
-            {isOdd ? (
-              <AboutRightColumn title={data.title} description={data.description} secondTitle={data.secondTitle} secondDescription={data.secondDescription} image={image} />
-            ) : (
-              <AboutLeftColumn title={data.title} description={data.description} secondTitle={data.secondTitle} secondDescription={data.secondDescription} image={image} />
-            )}
-          </div>
-        );
-      })}
+      <AboutLeftColumn
+        title={aboutData.whyWeDo.title}
+        description={aboutData.whyWeDo.description}
+        secondTitle={aboutData.whyWeDo.secondTitle}
+        secondDescription={aboutData.whyWeDo.secondDescription}
+        image={whyAreWeDoing}
+      />
     </section>
   );
 };

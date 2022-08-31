@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutLeftColumn = ({ title, description, secondTitle, secondDescription, image }) => {
   return (
-    <>
+    <div className="flex items-center">
       <div className="flex-1 text-lg text-center">
         <div className="mb-10">
           <h1 className="text-2xl py-2 font-bold">{title}</h1>
@@ -18,7 +18,7 @@ const AboutLeftColumn = ({ title, description, secondTitle, secondDescription, i
       <div className="flex-1 ml-20">
         <img src={image} alt="Robert's Hour" />
       </div>
-    </>
+    </div>
   );
 };
 
