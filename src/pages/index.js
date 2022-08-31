@@ -4,12 +4,14 @@ import Layout from "../core/Layout";
 
 import Header from "../sections/Header";
 import Hero from "../sections/Hero";
-import Packages from "../sections/Packages";
-import Contact from "../sections/Contact";
 import About from "../sections/About";
-import Gallery from "../sections/Gallery";
 import Targets from "../sections/Targets";
+import Community from "../sections/Community";
 import Projects from "../sections/Projects";
+import WhatWeDo from "../sections/WhatWeDo";
+import Packages from "../sections/Packages";
+import Gallery from "../sections/Gallery";
+import Contact from "../sections/Contact";
 
 const HomePage = () => {
   return (
@@ -17,10 +19,12 @@ const HomePage = () => {
       <Header />
       <Hero />
       <About />
+      <Targets />
+      <Community />
+      <Projects />
+      <WhatWeDo />
       <Packages />
       <Gallery />
-      <Targets />
-      <Projects />
       <Contact />
     </Layout>
   );
