@@ -6,7 +6,7 @@ import sponsorPackages from "../data/benefits.json";
 
 const Packages = () => {
   return (
-    <section id="packages" className="bg-gray-200 py-20">
+    <section id="packages" className=" py-20 bg-gray-200">
       <SectionTitle title="Sponsor Packages" />
 
       <div className="container  mx-auto flex justify-around items-stretch ">
