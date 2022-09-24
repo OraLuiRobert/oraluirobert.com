@@ -1,4 +1,5 @@
 import React from "react";
+import Spin from "react-reveal/Spin";
 import SectionTitle from "../ui/molecules/SectionTitle";
 
 import targetsData from "../data/targets";
@@ -7,10 +8,10 @@ const Targets = () => {
   return (
     <section id="targets" className="bg-gray-200 py-20">
       <SectionTitle title="Our Goals" />
-      <div className="flex items-center justify-center">
+      <div className="flex flex-wrap md:flex-nowrap items-center justify-center">
         {targetsData.targets.map((item, index) => {
           const number = index + 1;
-          const hasMargin = index === 1 ? " mx-10" : "";
+          const hasMargin = index === 1 ? " md:mx-10 mx-0 my-10 md:my-0" : "";
           const gradientSetings = [
             { gradientFrom: "from-yellow-50", gradientVia: "via-yellow-500", gradientTo: "to-red-400" },
             { gradientFrom: "from-red-400", gradientVia: "via-rose-600", gradientTo: "to-pink-900" },
@@ -24,15 +25,17 @@ const Targets = () => {
               >
                 {number}
               </h1>
-              <div className="flex items-center justify-center min-w-[150px] min-h-[150px]  bg-white shadow-inner rounded-full text-center z-9 relative left-[-25px] ">
-                <p className="w-[120px]">{item}</p>
-              </div>
+              <Spin>
+                <div className="flex items-center justify-center min-w-[150px] min-h-[150px]  bg-white shadow-2xl rounded-full text-center z-9 relative left-[-25px] ">
+                  <p className="w-[120px]">{item}</p>
+                </div>
+              </Spin>
             </div>
           );
         })}
       </div>
 
-      <p className="w-6/12 max-w-screen-lg text-center mx-auto mt-10">{targetsData.description}</p>
+      <p className="md:w-6/12 w-11/12 text-center mx-auto mt-10">{targetsData.description}</p>
     </section>
   );
 };

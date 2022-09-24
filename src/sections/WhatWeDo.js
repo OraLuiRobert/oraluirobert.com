@@ -7,7 +7,7 @@ import whatWeDo from "../static/about/whatWeDo.jpg";
 
 const WhatWeDo = () => {
   return (
-    <section className="container mx-auto py-20 ">
+    <section className="w-11/12 mx-auto py-20 ">
       <AboutLeftColumn
         title={aboutData.whatWeDo.title}
         description={aboutData.whatWeDo.description}

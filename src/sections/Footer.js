@@ -4,7 +4,7 @@ import arrow from "../static/icon-go-up.svg";
 
 const Footer = () => {
   return (
-    <section className="container w-11/12 max-w-screen-lg mx-auto flex flex-col justify-between text-center items-center pb-6 sm:flex-row sm:text-left sm:pb-10">
+    <section className="w-11/12 w-11/12 max-w-screen-lg mx-auto flex flex-col justify-between text-center items-center pb-6 sm:flex-row sm:text-left sm:pb-10">
       <p className="text-gray-400 text-base">
         Copyright &copy; 2022 QED. All rights reserved. QED is on
         <a href="https://github.com/qed-team" rel="noreferrer" target="_blank" className="border-b ml-2">

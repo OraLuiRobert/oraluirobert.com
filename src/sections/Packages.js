@@ -9,7 +9,7 @@ const Packages = () => {
     <section id="packages" className=" py-20 bg-gray-200">
       <SectionTitle title="Sponsor Packages" />
 
-      <div className="container  mx-auto flex justify-around items-stretch ">
+      <div className="w-11/12  mx-auto flex flex-wrap md:flex-nowrap justify-around items-stretch ">
         {sponsorPackages.packages.map((item, index) => (
           <Card packageName={item.name} packagePrice={item.price} packageBenefits={item.benefits} index={index} />
         ))}
