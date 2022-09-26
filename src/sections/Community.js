@@ -7,7 +7,7 @@ import communityDiscovery from "../static/about/communityDiscovery.jpg";
 
 const Community = () => {
   return (
-    <section className="container mx-auto py-20 ">
+    <section className="w-11/12 mx-auto py-20 ">
       <AboutRightColumn
         title={aboutData.community.title}
         description={aboutData.community.description}
