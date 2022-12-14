@@ -1,12 +1,11 @@
 import React from "react";
-import Spin from "react-reveal/Spin";
 import SectionTitle from "../ui/molecules/SectionTitle";
 
 import targetsData from "../data/targets";
 
 const Targets = () => {
   return (
-    <section id="targets" className="bg-gray-200 py-20">
+    <section id="targets" className="bg-gray-200 py-14 lg:py-20">
       <SectionTitle title="Our Goals" />
       <div className="flex flex-wrap md:flex-nowrap items-center justify-center">
         {targetsData.targets.map((item, index) => {
@@ -25,11 +24,9 @@ const Targets = () => {
               >
                 {number}
               </h1>
-              <Spin>
-                <div className="flex items-center justify-center min-w-[150px] min-h-[150px]  bg-white shadow-2xl rounded-full text-center z-9 relative left-[-25px] ">
-                  <p className="w-[120px]">{item}</p>
-                </div>
-              </Spin>
+              <div className="flex items-center justify-center min-w-[150px] min-h-[150px]  bg-white shadow-2xl rounded-full text-center z-9 relative left-[-25px] ">
+                <p className="w-[120px]">{item}</p>
+              </div>
             </div>
           );
         })}

@@ -1,4 +1,5 @@
 import React from "react";
+import addToMailchimp from "gatsby-plugin-mailchimp";
 
 import phoneNumber from "../static/phone-number.png";
 
@@ -6,7 +7,7 @@ import { FaFacebookSquare, FaTwitterSquare, FaInstagramSquare } from "react-icon
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-20 bg-gray-200 flex ">
+    <section id="contact" className="py-14 lg:py-20 bg-gray-200 flex ">
       <div className="w-11/12 flex mx-auto flex-wrap sm:flex-nowrap text-center sm:text-left">
         <div className="w-1/2 basis-full ">
           <h3 className="text-2xl font-semibold mb-5 md:text-4xl">Contact</h3>

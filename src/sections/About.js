@@ -1,6 +1,6 @@
 import React from "react";
 import SectionTitle from "../ui/molecules/SectionTitle";
-import AboutLeftColumn from "../components/about/AboutLeftColumn";
+import DynamicRow from "../components/about/DynamicRow";
 
 import aboutData from "../data/about.json";
 
@@ -8,9 +8,9 @@ import whyAreWeDoing from "../static/about/whyAreWeDoing.jpg";
 
 const About = () => {
   return (
-    <section id="about" className="w-11/12 mx-auto py-20 ">
+    <section id="about" className="w-11/12 mx-auto py-14 lg:py-20">
       <SectionTitle title="About" highlightedText=" Robert's Hour" />
-      <AboutLeftColumn
+      <DynamicRow
         title={aboutData.whyWeDo.title}
         description={aboutData.whyWeDo.description}
         secondTitle={aboutData.whyWeDo.secondTitle}

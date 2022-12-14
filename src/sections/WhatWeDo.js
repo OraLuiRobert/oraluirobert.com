@@ -1,5 +1,5 @@
 import React from "react";
-import AboutLeftColumn from "../components/about/AboutLeftColumn";
+import DynamicRow from "../components/about/DynamicRow";
 
 import aboutData from "../data/about.json";
 
@@ -7,8 +7,8 @@ import whatWeDo from "../static/about/whatWeDo.jpg";
 
 const WhatWeDo = () => {
   return (
-    <section className="w-11/12 mx-auto py-20 ">
-      <AboutLeftColumn
+    <section className="w-11/12 mx-auto py-14 lg:py-20 ">
+      <DynamicRow
         title={aboutData.whatWeDo.title}
         description={aboutData.whatWeDo.description}
         secondTitle={aboutData.whatWeDo.secondTitle}

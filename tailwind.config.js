@@ -10,7 +10,9 @@ module.exports = {
           50: "#29ade3c2",
           100: "#29ADE3",
         },
-        green: {},
+        gray: {
+          50: "#00000080",
+        },
         yellow: {
           50: "#FFDF6E",
         },
