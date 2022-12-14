@@ -10,7 +10,7 @@ import Contact from "../sections/Contact";
 const HomePage = () => {
   return (
     <Layout>
-      <Header isInnerPage />
+      <Header />
       <Hero isInnerPage />
       <DonationMethods />
       <Contact />

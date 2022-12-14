@@ -1,5 +1,4 @@
 import React from "react";
-import addToMailchimp from "gatsby-plugin-mailchimp";
 
 import phoneNumber from "../static/phone-number.png";
 
