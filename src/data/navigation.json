@@ -1,8 +1,10 @@
 {
   "menu": [
     { "name": "About us", "href": "#about" },
+    { "name": "Blog", "href": "https://blog.oraluirobert.com/" },
     { "name": "Projects", "href": "#projects" },
     { "name": "Sponsors", "href": "#packages" },
+    { "name": "Donate", "href": "/donate" },
     { "name": "Contact us", "href": "#contact" }
   ]
 }
