@@ -37,9 +37,10 @@
     "react-helmet": "^6.1.0",
     "react-horizontal-timeline": "^1.5.3",
     "react-icons": "^4.4.0",
-    "react-lightbox-gallery": "^2.0.1",
     "react-reveal": "^1.2.2",
-    "scroll-detect-hook": "^1.1.0"
+    "react-slick": "^0.29.0",
+    "scroll-detect-hook": "^1.1.0",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.2",
