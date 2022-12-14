@@ -7,7 +7,7 @@ const Projects = () => {
   const [values, setValues] = useState({ value: 0, previous: -1 });
 
   return (
-    <section id="projects" className="py-20 bg-gray-200">
+    <section id="projects" className="py-14 lg:py-20 bg-gray-200">
       <SectionTitle title="Past Projects" />
       <div
         className="w-11/12 md:w-6/12 mx-auto"

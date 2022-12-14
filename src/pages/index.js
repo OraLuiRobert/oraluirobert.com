@@ -9,8 +9,10 @@ import Targets from "../sections/Targets";
 import Community from "../sections/Community";
 import Projects from "../sections/Projects";
 import WhatWeDo from "../sections/WhatWeDo";
+import IncomingProjects from "../sections/IncomingProjects";
 import Packages from "../sections/Packages";
 import Gallery from "../sections/Gallery";
+import Contribute from "../sections/Contribute";
 import Contact from "../sections/Contact";
 
 const HomePage = () => {
@@ -23,8 +25,10 @@ const HomePage = () => {
       <Community />
       <Projects />
       <WhatWeDo />
+      <IncomingProjects />
       <Packages />
       <Gallery />
+      <Contribute />
       <Contact />
     </Layout>
   );

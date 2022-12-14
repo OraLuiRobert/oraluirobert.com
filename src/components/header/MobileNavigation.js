@@ -26,9 +26,11 @@ const MobileNavigation = () => {
       <div className={"menu bg-black/75 w-3/6 fixed top-[66px] bottom-0 right-0 text-center transition-all " + isMenuVisible}>
         <ul className="flex flex-col pt-2">
           {navigation.menu.map((item, index) => {
+            const _href = item.href.includes("#") ? `/${item.href}` : item.href;
+
             return (
               <li className="mb-2 pb-2 border-b-[1px] border-black">
-                <a className="text-white cursor-pointer" href={item.href}>
+                <a className="text-white cursor-pointer" href={_href}>
                   {item.name}
                 </a>
               </li>

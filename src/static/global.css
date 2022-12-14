@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.styles_lightroom__1X2qE {
-  position: fixed !important;
-}
-
-#gallery img {
-  cursor: pointer;
+.slick-slide {
+  padding: 0 10px;
 }
